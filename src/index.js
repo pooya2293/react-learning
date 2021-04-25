@@ -130,4 +130,33 @@ import ReactDOM from 'react-dom';
 //  	document.getElementById('root')
 // )
 
-/********Nested Components***********/
+/*********Props***********/
+
+const CurrentDate = (props)=>{
+	return(
+		<div>
+			<p>The current date is:{props.my_date}</p>
+		</div>
+	)
+}
+
+class Calender extends React.Component {
+	constructor(props){
+		super(props);
+	}
+	render(){
+		return(
+			<div>
+				<p>what date is it ?</p>
+				<CurrentDate my_date={Date()}/>
+			</div>
+		)
+	}
+}
+
+ReactDOM.render(
+	<Calender />,
+	document.querySelector('#root')
+)
+
+/*********Props***********/
