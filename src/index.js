@@ -187,5 +187,35 @@ import ReactDOM from 'react-dom';
 //  	document.querySelector('#root')
 //  )
 
-/*********Array*Props***********/
+/*******Use*Default*Props*********/
 
+
+const List = (props) => {
+	return <p>{props.tasks.join(", ")}</p>
+}
+
+class ToDo extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	render(){
+		return(
+			<div>
+				<h1>To Do Lists</h1>
+				<h2>Today</h2>
+				<List />
+			</div>
+		)
+	}
+};
+
+List.defaultProps = {
+	tasks:['item1','item2','item3']
+}
+
+ReactDOM.render(
+ 	<ToDo />,
+ 	document.querySelector('#root')
+ )
+
+/*******Use*Default*Props*********/
