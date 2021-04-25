@@ -56,30 +56,33 @@ import ReactDOM from 'react-dom';
 /*****Create a Component with Composition******/
 
 
-const ChildComponent =()=> {
-	return(
-		<div>
-			<p>I am a child</p>
-		</div>
-	)
-};
+// const ChildComponent =()=> {
+// 	return(
+// 		<div>
+// 			<p>I am a child</p>
+// 		</div>
+// 	)
+// };
 
-class ParentComponent extends React.Component {
-	// i dont have any props
-	// constructor(props) {
- //  		super(props);
- //  	}
-    render() {
-    	return (
-  		<div>
-  			<h1>I am the parent</h1>
-  			<ChildComponent />	
-  		</div>
-  		);
-  	}
-};
+// class ParentComponent extends React.Component {
+// 	// i dont have any props
+// 	// constructor(props) {
+//  //  		super(props);
+//  //  	}
+//     render() {
+//     	return (
+//   		<div>
+//   			<h1>I am the parent</h1>
+//   			<ChildComponent />	
+//   		</div>
+//   		);
+//   	}
+// };
 
-ReactDOM.render(
-	<ParentComponent />,
-	document.getElementById('root')
-)
+// ReactDOM.render(
+// 	<ParentComponent />,
+// 	document.getElementById('root')
+// )
+
+
+/************************/
