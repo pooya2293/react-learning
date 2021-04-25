@@ -16,7 +16,7 @@ import ReactDOM from 'react-dom';
 //   document.getElementById('root')
 // );
 
-{/***********************/}
+/***********************/
 
 // const MyComponent = ()=> {
 // 	return(
@@ -29,7 +29,7 @@ import ReactDOM from 'react-dom';
 // document.getElementById('root')
 // )
 
-{/***********************/}
+/***********************/
 
 // use class for local state and lifecycle hooks
 // class App extends React.Component {
@@ -53,5 +53,33 @@ import ReactDOM from 'react-dom';
 // 	document.getElementById('root')
 // );
 
-{/***********************/}
+/*****Create a Component with Composition******/
 
+
+const ChildComponent =()=> {
+	return(
+		<div>
+			<p>I am a child</p>
+		</div>
+	)
+};
+
+class ParentComponent extends React.Component {
+	// i dont have any props
+	// constructor(props) {
+ //  		super(props);
+ //  	}
+    render() {
+    	return (
+  		<div>
+  			<h1>I am the parent</h1>
+  			<ChildComponent />	
+  		</div>
+  		);
+  	}
+};
+
+ReactDOM.render(
+	<ParentComponent />,
+	document.getElementById('root')
+)
