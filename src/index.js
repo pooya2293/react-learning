@@ -87,47 +87,47 @@ import ReactDOM from 'react-dom';
 
 /********Nested Components***********/
 
-const TypesOfFruits = ()=>{
-	return(
-	<div>
-		<ul>
-			<li>Apples</li>
-			<li>Blueberries</li>
-			<li>strawberries</li>
-			<li>Bananas</li>
-		</ul>
-	</div>
-	)
-};
+// const TypesOfFruits = ()=>{
+// 	return(
+// 	<div>
+// 		<ul>
+// 			<li>Apples</li>
+// 			<li>Blueberries</li>
+// 			<li>strawberries</li>
+// 			<li>Bananas</li>
+// 		</ul>
+// 	</div>
+// 	)
+// };
 
-const AddFruit= ()=>{
-	return(
-		<div>
-			<TypesOfFruits />
-			<hr />
-		</div>
-	)
-}
+// const AddFruit= ()=>{
+// 	return(
+// 		<div>
+// 			<TypesOfFruits />
+// 			<hr />
+// 		</div>
+// 	)
+// }
 
-class SuperMarket extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+// class SuperMarket extends React.Component {
+//   constructor(props) {
+//     super(props);
+//   }
 
-  render() {
-    return (
-      <div>
-        <h1>Types of Food:</h1>
-          <AddFruit />
-      </div>
-    );
-  }
-};
+//   render() {
+//     return (
+//       <div>
+//         <h1>Types of Food:</h1>
+//           <AddFruit />
+//       </div>
+//     );
+//   }
+// };
 
 
-ReactDOM.render(
- 	<SuperMarket />,
- 	document.getElementById('root')
-)
+// ReactDOM.render(
+//  	<SuperMarket />,
+//  	document.getElementById('root')
+// )
 
 /********Nested Components***********/
