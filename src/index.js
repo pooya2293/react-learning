@@ -37,10 +37,13 @@ class App extends React.Component {
  constructor(props) {
  // fires before component is mounted
  super(props); // makes this refer to this component
+ this.state = {date: new Date()}; // set state
  }
  render() {
  return (
- <h1>Hello from class ES6 component</h1>
+ <h1>
+ It is {this.state.date.toLocaleTimeString()}.
+ </h1>
  )
  }
 };
