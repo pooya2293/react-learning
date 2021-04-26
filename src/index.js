@@ -254,40 +254,56 @@ import ReactDOM from 'react-dom';
 
 /****Access Props*Using*this.props****/
 
-const ReturnTempPassword = (props)=>{
-	return(
-		 <div>
-            <p>Your temporary password is: 
-            <strong>
-            	{props.tempPassword}
-            </strong></p>
-        </div>
-	)
-}
+// class ReturnTempPassword extends React.Component {
+//   constructor(props) {
+//     super(props);
 
-class ResetPassword extends React.Component {
-  constructor(props) {
-    super(props);
+//   }
+//   render() {
+//     return (
+//         <div>
+//             {  Change code below this line  }
+//             <p>Your temporary password is: <strong>{this.props.tempPassword}</strong></p>
+//             { /* Change code above this line */ }
+//         </div>
+//     );
+//   }
+// };
 
-  }
-  render() {
-    return (
-        <div>
-          <h2>Reset Password</h2>
-          <h3>We've generated a new temporary password for you.</h3>
-          <h3>Please reset this password from your account settings ASAP.</h3>
+// const ReturnTempPassword = (props)=>{
+// 	return(
+// 		 <div>
+//             <p>Your temporary password is: 
+//             <strong>
+//             	{props.tempPassword}
+//             </strong></p>
+//         </div>
+// 	)
+// }
+
+// class ResetPassword extends React.Component {
+//   constructor(props) {
+//     super(props);
+
+//   }
+//   render() {
+//     return (
+//         <div>
+//           <h2>Reset Password</h2>
+//           <h3>We've generated a new temporary password for you.</h3>
+//           <h3>Please reset this password from your account settings ASAP.</h3>
          
-			 <ReturnTempPassword 
-			 tempPassword="xxxxxxxx" />
+// 			 <ReturnTempPassword 
+// 			 tempPassword="xxxxxxxx" />
          
-        </div>
-    );
-  }
-};
+//         </div>
+//     );
+//   }
+// };
 
-ReactDOM.render(
- 	<ResetPassword />,
- 	document.querySelector('#root')
- )
+// ReactDOM.render(
+//  	<ResetPassword />,
+//  	document.querySelector('#root')
+//  )
 
 /****Access Props*Using*this.props****/
