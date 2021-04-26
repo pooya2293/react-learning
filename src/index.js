@@ -220,34 +220,36 @@ import ReactDOM from 'react-dom';
 
 /*******Use*Default*Props*********/
 
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
-const List = (props) => {
-	return <p>{props.tasks.join(", ")}</p>
-}
+// const List = (props) => {
+// 	return <p>{props.tasks.join(", ")}</p>
+// }
 
-List.propTypes = {tasks : PropTypes.number.isRequired}
+// List.propTypes = {tasks : PropTypes.number.isRequired}
 
-class ToDo extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-	render(){
-		return(
-			<div>
-				<h1>To Do Lists</h1>
-				<h2>Today</h2>
-				<List />
-			</div>
-		)
-	}
-};
+// class ToDo extends React.Component {
+// 	constructor(props) {
+// 		super(props);
+// 	}
+// 	render(){
+// 		return(
+// 			<div>
+// 				<h1>To Do Lists</h1>
+// 				<h2>Today</h2>
+// 				<List />
+// 			</div>
+// 		)
+// 	}
+// };
 
-List.defaultProps = {
-	tasks:['item1','item2','item3']
-}
+// List.defaultProps = {
+// 	tasks:['item1','item2','item3']
+// }
 
-ReactDOM.render(
- 	<ToDo />,
- 	document.querySelector('#root')
- )
+// ReactDOM.render(
+//  	<ToDo />,
+//  	document.querySelector('#root')
+//  )
+
+/*******Use*Default*Props*********/
