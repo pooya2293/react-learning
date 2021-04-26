@@ -308,47 +308,47 @@ import ReactDOM from 'react-dom';
 
 /****Using*Props*with*Stateless****/
 
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
-class CampSite extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div>
-        <Camper/>
-      </div>
-    );
-  }
-};
-// Change code below this line
+// class CampSite extends React.Component {
+//   constructor(props) {
+//     super(props);
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <Camper/>
+//       </div>
+//     );
+//   }
+// };
+// // Change code below this line
 
-class Camper extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render(){
-    return(
-      <div>
-        <p>{this.props.name}</p>
-      </div>
-    )
-  }
-}
+// class Camper extends React.Component {
+//   constructor(props){
+//     super(props);
+//   }
+//   render(){
+//     return(
+//       <div>
+//         <p>{this.props.name}</p>
+//       </div>
+//     )
+//   }
+// }
 
 
-Camper.propTypes ={
-  name : PropTypes.string.isRequired
-}
+// Camper.propTypes ={
+//   name : PropTypes.string.isRequired
+// }
 
-Camper.defaultProps = {
-  name: 'CamperBot'
-}
+// Camper.defaultProps = {
+//   name: 'CamperBot'
+// }
 
-ReactDOM.render(
- 	<CampSite />,
- 	document.querySelector('#root')
- )
+// ReactDOM.render(
+//  	<CampSite />,
+//  	document.querySelector('#root')
+//  )
 
  /****Using*Props*with*Stateless****/
