@@ -254,21 +254,16 @@ import ReactDOM from 'react-dom';
 
 /****Access Props*Using*this.props****/
 
-class ReturnTempPassword extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-  render() {
-    return (
-        <div>
-            { /* Change code below this line */ }
-            <p>Your temporary password is: <strong>{this.props.tempPassword}</strong></p>
-            { /* Change code above this line */ }
+const ReturnTempPassword = (props)=>{
+	return(
+		 <div>
+            <p>Your temporary password is: 
+            <strong>
+            	{props.tempPassword}
+            </strong></p>
         </div>
-    );
-  }
-};
+	)
+}
 
 class ResetPassword extends React.Component {
   constructor(props) {
