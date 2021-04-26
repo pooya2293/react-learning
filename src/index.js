@@ -438,4 +438,61 @@ import ReactDOM from 'react-dom';
 //  	document.querySelector('#root')
 //  )
 
-/****Set State with this.setState****/
+// The (this) keyword is one of the most confusing
+//  aspects of JavaScript but it plays an 
+//  important role in React. Although its 
+//  behavior here is totally normal, these 
+//  lessons aren not the place for an in-depth 
+//  review of this so please refer to other 
+//  lessons if the above is confusing!
+
+/****Use State to Toggle an Element****/
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visibility: false
+    };
+    // Change code below this line
+  	this.toggleVisibility = this.
+  	toggleVisibility.bind(this);
+    // Change code above this line
+  }
+  // Change code below this line
+	toggleVisibility(){
+	  	this.setState(state=>{
+		    if(state.visibility === true){
+			    return {visibility:false}
+			}else{
+			    return {visibility:true}
+			}
+		})
+	};
+  // Change code above this line
+  render() {
+    if (this.state.visibility) {
+      return (
+        <div>
+          <button onClick={this.
+          toggleVisibility}>Click Me
+          </button>
+          <h1>Now you see me!</h1>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <button onClick={this.toggleVisibility}>Click Me</button>
+        </div>
+      );
+    }
+  }
+};
+
+ReactDOM.render(
+ 	<MyComponent />,
+ 	document.querySelector('#root')
+ )
+
+/****Use State to Toggle an Element****/
